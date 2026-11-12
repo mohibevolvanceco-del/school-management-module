@@ -3,13 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Lesson 2: Organising School Data | School Management Systems</title>
+  <title>Lesson 2: Planning and Organising | School Management</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="c-teal">
+<div class="stripe"><span></span><span></span><span></span><span></span><span></span><span></span></div>
 <header class="site-header">
   <div class="header-inner">
-    <a class="brand" href="index.html"><strong>School Management Systems</strong><span>Computer Science · Grade 11</span></a>
+    <a class="brand" href="index.html"><strong>School Management</strong><span>A two-week module for Grade 11</span></a>
     <button class="menu-button" type="button" aria-expanded="false">Menu</button>
   </div>
 </header>
@@ -29,107 +30,48 @@
 <main class="page">
   <div class="page-head">
     <p>Page 4 of 9 · Lesson 2 of 3</p>
-    <h1>Lesson 2: Organising School Data</h1>
+    <h1>Lesson 2: Planning and Organising</h1>
   </div>
 
-<h2>Tables, records and fields</h2>
-<p>An SMS stores data in <strong>tables</strong>. Each table holds one kind of thing, such as students or fee payments. Each <strong>row</strong> is one record (one student), and each <strong>column</strong> is a field (a detail about that student).</p>
+<h2>Planning: deciding what and when</h2>
+<p>Good planning starts with clear goals. Instead of &ldquo;improve results&rdquo;, a good manager writes a goal that can be checked, such as &ldquo;raise the Grade 9 science pass rate from 70% to 80% by the final exam&rdquo;. Then they plan the steps, the people involved and the dates.</p>
 
+<h2>Organising: people, time and money</h2>
+<p>Once there is a plan, the manager organises the resources to carry it out. Here are common school tasks and simple tools that help:</p>
 <div class="table-wrap">
 <table class="stack">
-  <tr><th>student_id</th><th>full_name</th><th>class_id</th><th>guardian_phone</th></tr>
-  <tr><td data-label="student_id">S1041</td><td data-label="full_name">Ayesha Khan</td><td data-label="class_id">11-A</td><td data-label="guardian_phone">0300-1234567</td></tr>
-  <tr><td data-label="student_id">S1042</td><td data-label="full_name">Hamza Ali</td><td data-label="class_id">11-A</td><td data-label="guardian_phone">0321-7654321</td></tr>
-  <tr><td data-label="student_id">S1043</td><td data-label="full_name">Ayesha Khan</td><td data-label="class_id">11-B</td><td data-label="guardian_phone">0333-1112223</td></tr>
+  <tr><th>Task</th><th>Helpful tool</th><th>Why it helps</th></tr>
+  <tr><td data-label="Task">Term calendar (exams, holidays, events)</td><td data-label="Helpful tool">Google Calendar</td><td data-label="Why it helps">Everyone sees the same dates, and updates appear at once</td></tr>
+  <tr><td data-label="Task">Duty roster and substitute list</td><td data-label="Helpful tool">Google Sheets</td><td data-label="Why it helps">Easy to edit and share, and shows who is free at a glance</td></tr>
+  <tr><td data-label="Task">Event budget</td><td data-label="Helpful tool">Google Sheets or Excel</td><td data-label="Why it helps">Adds up costs automatically and shows money left</td></tr>
+  <tr><td data-label="Task">Staff documents and policies</td><td data-label="Helpful tool">Shared Google Drive folder</td><td data-label="Why it helps">One place for the latest version, with no lost files</td></tr>
+  <tr><td data-label="Task">Task list for a team</td><td data-label="Helpful tool">A shared to-do list, such as Google Keep or Trello</td><td data-label="Why it helps">Shows who is doing what and what is finished</td></tr>
 </table>
 </div>
-<p>Notice that two students share the name Ayesha Khan. That is why we cannot use the name to identify a student.</p>
 
-<h2>Primary keys</h2>
-<p>A <strong>primary key</strong> is a field whose value is different for every record. Here, <code>student_id</code> is the primary key: no two students can have the same ID. Roll numbers, receipt numbers and CNIC numbers are all good primary keys.</p>
+<h2>Example: organising a Parent-Teacher Meeting</h2>
+<ol>
+  <li><strong>Plan:</strong> choose a date in Google Calendar that does not clash with exams.</li>
+  <li><strong>Organise:</strong> make a sheet of time slots for each teacher and share it with staff.</li>
+  <li><strong>Inform:</strong> send parents the date and a Google Form to book a slot.</li>
+  <li><strong>Prepare:</strong> ask teachers to update results so they are ready to share.</li>
+  <li><strong>Review:</strong> after the meeting, collect quick feedback from parents with a short form.</li>
+</ol>
 
-<h2>Foreign keys and relationships</h2>
-<p>A <strong>foreign key</strong> is a field that points to the primary key of another table. In the table above, <code>class_id</code> points to the CLASS table. This links each student to their class without typing the class teacher's name again for every student.</p>
-<p>The diagram shows four tables in a simple SMS and how they connect:</p>
-
-<div class="figure">
-<svg viewBox="0 0 660 360" role="img" aria-label="Diagram: one Class has many Students; one Student has many Attendance records and many Fee records.">
-  <g font-family="Tahoma, Verdana, sans-serif" font-size="13" fill="#24292e">
-    <g stroke="#1d5c4d" stroke-width="1.5" fill="#fff">
-      <rect x="10" y="40" width="170" height="120" rx="4"/>
-      <rect x="245" y="120" width="170" height="140" rx="4"/>
-      <rect x="480" y="10" width="170" height="140" rx="4"/>
-      <rect x="480" y="205" width="170" height="145" rx="4"/>
-    </g>
-    <g fill="#1d5c4d">
-      <rect x="10" y="40" width="170" height="28" rx="4"/>
-      <rect x="245" y="120" width="170" height="28" rx="4"/>
-      <rect x="480" y="10" width="170" height="28" rx="4"/>
-      <rect x="480" y="205" width="170" height="28" rx="4"/>
-    </g>
-    <g fill="#fff" font-weight="bold" text-anchor="middle">
-      <text x="95" y="59">CLASS</text>
-      <text x="330" y="139">STUDENT</text>
-      <text x="565" y="29">ATTENDANCE</text>
-      <text x="565" y="224">FEE</text>
-    </g>
-    <text x="22" y="90"><tspan font-weight="bold">class_id</tspan> (PK)</text>
-    <text x="22" y="112">class_name</text>
-    <text x="22" y="134">class_teacher</text>
-
-    <text x="257" y="170"><tspan font-weight="bold">student_id</tspan> (PK)</text>
-    <text x="257" y="192">full_name</text>
-    <text x="257" y="214">class_id (FK)</text>
-    <text x="257" y="236">guardian_phone</text>
-
-    <text x="492" y="60"><tspan font-weight="bold">record_id</tspan> (PK)</text>
-    <text x="492" y="82">student_id (FK)</text>
-    <text x="492" y="104">date</text>
-    <text x="492" y="126">status</text>
-
-    <text x="492" y="255"><tspan font-weight="bold">receipt_no</tspan> (PK)</text>
-    <text x="492" y="277">student_id (FK)</text>
-    <text x="492" y="299">month</text>
-    <text x="492" y="321">amount_paid</text>
-
-    <g stroke="#5f6b66" stroke-width="1.5" fill="none">
-      <polyline points="180,100 212,100 212,190 245,190"/>
-      <polyline points="415,170 448,170 448,80 480,80"/>
-      <polyline points="415,215 448,215 448,275 480,275"/>
-    </g>
-    <g font-size="12" fill="#5f6b66">
-      <text x="186" y="94">1</text>
-      <text x="226" y="184">many</text>
-      <text x="420" y="164">1</text>
-      <text x="452" y="74">many</text>
-      <text x="420" y="209">1</text>
-      <text x="452" y="269">many</text>
-    </g>
-  </g>
-</svg>
-<p>Figure: how four tables in a school database are linked. PK = primary key, FK = foreign key.</p>
-</div>
-
-<ul>
-  <li>One class has <strong>many</strong> students (one-to-many).</li>
-  <li>One student has <strong>many</strong> attendance records, one for each school day.</li>
-  <li>One student has <strong>many</strong> fee records, one for each month.</li>
-</ul>
-
-<div class="tip"><strong>Why not one big table?</strong> If we stored the class teacher's name in every student row, changing the teacher would mean editing 40 rows. With a separate CLASS table, we change it once.</div>
+<div class="tip"><strong>Remember:</strong> a tool is only as good as the plan behind it. A shared calendar with the wrong dates helps no one.</div>
 
 <h2>Read more</h2>
 <ul>
-  <li><a href="https://www.w3schools.com/sql/sql_primarykey.asp" target="_blank" rel="noopener">W3Schools: Primary keys</a></li>
-  <li><a href="https://www.w3schools.com/sql/sql_foreignkey.asp" target="_blank" rel="noopener">W3Schools: Foreign keys</a></li>
+  <li><a href="https://support.google.com/calendar/answer/37095" target="_blank" rel="noopener">Google Calendar Help: Create and share a calendar</a></li>
+  <li><a href="https://support.google.com/docs/answer/6000292" target="_blank" rel="noopener">Google Sheets Help: Get started with Sheets</a></li>
 </ul>
 
   <nav class="page-nav" aria-label="Previous and next page">
-    <a class="prev" href="lesson1.html"><small>&larr; Previous</small><b>Lesson 1: What is an SMS?</b></a>
-    <a class="next" href="lesson3.html"><small>Next &rarr;</small><b>Lesson 3: Users, Access and Privacy</b></a>
+    <a class="prev" href="lesson1.html"><small>&larr; Previous</small><b>Lesson 1: The School Manager’s Role</b></a>
+    <a class="next" href="lesson3.html"><small>Next &rarr;</small><b>Lesson 3: Leading, Communicating and Using Data</b></a>
   </nav>
 </main>
-<footer>School Management Systems · Grade 11 Computer Science</footer>
+<footer>School Management · Grade 11</footer>
 <script src="site.js"></script>
 </body>
 </html>

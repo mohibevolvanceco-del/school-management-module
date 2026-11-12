@@ -3,13 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Lesson 1: What is an SMS? | School Management Systems</title>
+  <title>Lesson 1: The School Manager’s Role | School Management</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="c-purple">
+<div class="stripe"><span></span><span></span><span></span><span></span><span></span><span></span></div>
 <header class="site-header">
   <div class="header-inner">
-    <a class="brand" href="index.html"><strong>School Management Systems</strong><span>Computer Science · Grade 11</span></a>
+    <a class="brand" href="index.html"><strong>School Management</strong><span>A two-week module for Grade 11</span></a>
     <button class="menu-button" type="button" aria-expanded="false">Menu</button>
   </div>
 </header>
@@ -29,61 +30,81 @@
 <main class="page">
   <div class="page-head">
     <p>Page 3 of 9 · Lesson 1 of 3</p>
-    <h1>Lesson 1: What is an SMS?</h1>
+    <h1>Lesson 1: The School Manager’s Role</h1>
   </div>
 
-<h2>From registers to software</h2>
-<p>Think about how your school keeps records on paper. Attendance is in one register, fees in another, and results in a file in the exam office. If the principal wants to know which students have low attendance <em>and</em> unpaid fees, someone has to search through several registers by hand.</p>
-<p>A School Management System solves this by storing all records in one shared database. Staff enter data once, and anyone with permission can search, update or print reports in seconds.</p>
+<h2>What does a school manager do?</h2>
+<p>A school manager, usually the principal, head teacher or a coordinator, is responsible for making sure the school works well for everyone. Teachers focus on their own classes, but the manager looks after the whole school: staff, students, parents, timetables, money and buildings.</p>
+<p>Most of a manager&rsquo;s work falls into four jobs that repeat throughout the year:</p>
 
-<div class="two-col">
-  <div class="box">
-    <h3>Paper registers</h3>
-    <ul>
-      <li>Slow to search</li>
-      <li>Same data written in many places</li>
-      <li>Easy to lose or damage</li>
-      <li>Reports made by hand</li>
-    </ul>
-  </div>
-  <div class="box tint">
-    <h3>School Management System</h3>
-    <ul>
-      <li>Search in seconds</li>
-      <li>Each fact stored once</li>
-      <li>Backed up automatically</li>
-      <li>Reports generated instantly</li>
-    </ul>
-  </div>
+<div class="figure">
+<svg viewBox="0 0 480 360" role="img" aria-label="The management cycle: Plan, then Organise, then Lead, then Monitor, and back to Plan.">
+  <defs>
+    <marker id="arr" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#9ca3af"/>
+    </marker>
+  </defs>
+  <g fill="none" stroke="#9ca3af" stroke-width="2" marker-end="url(#arr)">
+    <path d="M 290 70 Q 380 80 392 140"/>
+    <path d="M 392 222 Q 380 285 290 292"/>
+    <path d="M 190 292 Q 100 285 88 222"/>
+    <path d="M 88 140 Q 100 80 190 70"/>
+  </g>
+  <g font-family="Segoe UI, Tahoma, sans-serif" text-anchor="middle">
+    <circle cx="240" cy="68" r="50" fill="#2563eb"/>
+    <text x="240" y="65" fill="#fff" font-size="17" font-weight="bold">Plan</text>
+    <text x="240" y="84" fill="#dbe6ff" font-size="10">set goals</text>
+
+    <circle cx="400" cy="180" r="50" fill="#ea6a0c"/>
+    <text x="400" y="177" fill="#fff" font-size="17" font-weight="bold">Organise</text>
+    <text x="400" y="196" fill="#ffe4d1" font-size="10">arrange resources</text>
+
+    <circle cx="240" cy="292" r="50" fill="#7c3aed"/>
+    <text x="240" y="289" fill="#fff" font-size="17" font-weight="bold">Lead</text>
+    <text x="240" y="308" fill="#e7dcff" font-size="10">guide people</text>
+
+    <circle cx="80" cy="180" r="50" fill="#0f9488"/>
+    <text x="80" y="177" fill="#fff" font-size="17" font-weight="bold">Monitor</text>
+    <text x="80" y="196" fill="#d2f4ef" font-size="10">check progress</text>
+
+    <text x="240" y="176" fill="#1f2937" font-size="14" font-weight="bold">Good school</text>
+    <text x="240" y="194" fill="#1f2937" font-size="14" font-weight="bold">management</text>
+  </g>
+</svg>
+<p>Figure: the four jobs of a school manager repeat in a cycle all year.</p>
 </div>
 
-<h2>The main modules</h2>
-<p>An SMS is split into parts called modules. Each module handles one area of school work:</p>
+<div class="cards">
+  <div class="card blue"><h3>Plan</h3><p>Decide what the school wants to achieve and how. Example: setting the term calendar and exam dates.</p></div>
+  <div class="card orange"><h3>Organise</h3><p>Arrange people, time and money to carry out the plan. Example: making the timetable and duty roster.</p></div>
+  <div class="card purple"><h3>Lead</h3><p>Guide and motivate staff and students. Example: running staff meetings and supporting new teachers.</p></div>
+  <div class="card teal"><h3>Monitor</h3><p>Check how things are going and improve them. Example: reviewing results and attendance each month.</p></div>
+</div>
+
+<h2>Qualities of a good school manager</h2>
 <div class="table-wrap">
-<table class="stack">
-  <tr><th>Module</th><th>What it stores</th><th>Who uses it most</th></tr>
-  <tr><td data-label="Module">Admissions</td><td data-label="What it stores">New students' details and documents</td><td data-label="Who uses it most">Office staff</td></tr>
-  <tr><td data-label="Module">Attendance</td><td data-label="What it stores">Daily present / absent / late records</td><td data-label="Who uses it most">Class teachers</td></tr>
-  <tr><td data-label="Module">Examinations</td><td data-label="What it stores">Marks, grades and report cards</td><td data-label="Who uses it most">Teachers, exam office</td></tr>
-  <tr><td data-label="Module">Fees</td><td data-label="What it stores">Fee amounts, payments and receipts</td><td data-label="Who uses it most">Accounts office</td></tr>
-  <tr><td data-label="Module">Timetable</td><td data-label="What it stores">Which class has which subject, when</td><td data-label="Who uses it most">Coordinators</td></tr>
-  <tr><td data-label="Module">Communication</td><td data-label="What it stores">Notices and messages to parents</td><td data-label="Who uses it most">Admin, teachers</td></tr>
+<table>
+  <tr><th>Quality</th><th>What it looks like in practice</th></tr>
+  <tr><td data-label="Quality">Organised</td><td data-label="What it looks like in practice">Keeps a clear calendar, meets deadlines and plans ahead</td></tr>
+  <tr><td data-label="Quality">Fair</td><td data-label="What it looks like in practice">Treats all staff and students by the same rules</td></tr>
+  <tr><td data-label="Quality">Good communicator</td><td data-label="What it looks like in practice">Gives clear messages and listens to concerns</td></tr>
+  <tr><td data-label="Quality">Calm under pressure</td><td data-label="What it looks like in practice">Solves problems step by step instead of panicking</td></tr>
+  <tr><td data-label="Quality">Open to new ideas</td><td data-label="What it looks like in practice">Tries useful tools and better ways of working</td></tr>
+  <tr><td data-label="Quality">Responsible</td><td data-label="What it looks like in practice">Protects students&rsquo; safety and private information</td></tr>
 </table>
 </div>
 
-<h2>Read more</h2>
-<ul>
-  <li><a href="https://www.w3schools.com/sql/sql_intro.asp" target="_blank" rel="noopener">W3Schools: Introduction to SQL</a>, a short guide to how databases store and find records</li>
-</ul>
+<h2>Where technology fits in</h2>
+<p>Technology does not make someone a good manager, but it helps a good manager save time and stay organised. Throughout this module you will see simple, free tools, such as shared calendars, spreadsheets and online forms, used for real management tasks.</p>
 
-<div class="tip"><strong>Think about it:</strong> which of these modules does your own school already use, and which are still on paper?</div>
+<div class="tip"><strong>Think about it:</strong> think of a teacher or principal you respect. Which of the six qualities above do they show most?</div>
 
   <nav class="page-nav" aria-label="Previous and next page">
     <a class="prev" href="plan.html"><small>&larr; Previous</small><b>Course Plan</b></a>
-    <a class="next" href="lesson2.html"><small>Next &rarr;</small><b>Lesson 2: Organising School Data</b></a>
+    <a class="next" href="lesson2.html"><small>Next &rarr;</small><b>Lesson 2: Planning and Organising</b></a>
   </nav>
 </main>
-<footer>School Management Systems · Grade 11 Computer Science</footer>
+<footer>School Management · Grade 11</footer>
 <script src="site.js"></script>
 </body>
 </html>
