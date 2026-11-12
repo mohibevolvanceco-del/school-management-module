@@ -45,7 +45,7 @@ if (checkButton) {
       message += " You left " + unanswered + " question" + (unanswered > 1 ? "s" : "") + " blank.";
     }
     if (score === total) {
-      message += " Excellent. You are ready for the project.";
+      message += " Excellent. You’re ready for the project.";
     } else if (score >= total - 2) {
       message += " Good work. Read the explanations for the ones you missed.";
     } else {
