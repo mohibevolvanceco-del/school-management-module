@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 3: Users, Access and Privacy | School Management Systems</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html"><strong>School Management Systems</strong><span>Computer Science · Grade 11</span></a>
+    <button class="menu-button" type="button" aria-expanded="false">Menu</button>
+  </div>
+</header>
+<nav class="steps" aria-label="Module pages">
+  <ol>
+      <li><a href="index.html"><span class="num">1</span>Welcome</a></li>
+      <li><a href="plan.html"><span class="num">2</span>Plan</a></li>
+      <li><a href="lesson1.html"><span class="num">3</span>Lesson 1</a></li>
+      <li><a href="lesson2.html"><span class="num">4</span>Lesson 2</a></li>
+      <li><a href="lesson3.html" class="current" aria-current="page"><span class="num">5</span>Lesson 3</a></li>
+      <li><a href="quiz.html"><span class="num">6</span>Quiz</a></li>
+      <li><a href="activity.html"><span class="num">7</span>Activity</a></li>
+      <li><a href="project.html"><span class="num">8</span>Project</a></li>
+      <li><a href="help.html"><span class="num">9</span>Help</a></li>
+  </ol>
+</nav>
+<main class="page">
+  <div class="page-head">
+    <p>Page 5 of 9 · Lesson 3 of 3</p>
+    <h1>Lesson 3: Users, Access and Privacy</h1>
+  </div>
+
+<h2>Different users, different access</h2>
+<p>Many people use an SMS, but they should not all see the same things. A teacher needs to mark attendance for their class, but should not change fee records. A parent needs to see their own child's results, but nobody else's. This idea is called <strong>role-based access</strong>: each user gets only the access their job needs.</p>
+
+<div class="table-wrap">
+<table class="stack">
+  <tr><th>User</th><th>Can see</th><th>Can change</th></tr>
+  <tr><td data-label="User">Admin</td><td data-label="Can see">Everything</td><td data-label="Can change">User accounts and settings</td></tr>
+  <tr><td data-label="User">Teacher</td><td data-label="Can see">Their own classes</td><td data-label="Can change">Attendance and marks for their classes</td></tr>
+  <tr><td data-label="User">Accounts office</td><td data-label="Can see">Fee records</td><td data-label="Can change">Payments and receipts</td></tr>
+  <tr><td data-label="User">Parent</td><td data-label="Can see">Their own child's records</td><td data-label="Can change">Nothing (view only)</td></tr>
+  <tr><td data-label="User">Student</td><td data-label="Can see">Their own timetable and results</td><td data-label="Can change">Nothing (view only)</td></tr>
+</table>
+</div>
+
+<h2>Keeping school data safe</h2>
+<p>An SMS holds personal data: names, phone numbers, addresses, marks and fee details. If this data leaks or is lost, students and families can be harmed. Good systems protect it in four ways:</p>
+<ol>
+  <li><strong>Personal logins:</strong> every user has their own username and a strong password. Passwords are never shared.</li>
+  <li><strong>Least access:</strong> users only get the access they need (see the table above).</li>
+  <li><strong>Backups:</strong> data is copied regularly, so it can be restored after a crash.</li>
+  <li><strong>Activity log:</strong> the system records who changed what and when, so mistakes can be traced.</li>
+</ol>
+
+<div class="tip"><strong>Discuss:</strong> a teacher leaves the school. What should happen to their SMS account on their last day?</div>
+
+  <nav class="page-nav" aria-label="Previous and next page">
+    <a class="prev" href="lesson2.html"><small>&larr; Previous</small><b>Lesson 2: Organising School Data</b></a>
+    <a class="next" href="quiz.html"><small>Next &rarr;</small><b>Self-Check Quiz</b></a>
+  </nav>
+</main>
+<footer>School Management Systems · Grade 11 Computer Science</footer>
+<script src="site.js"></script>
+</body>
+</html>
